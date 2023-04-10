@@ -7,7 +7,7 @@ let isURL = url=>/^http(|s):\/\//.test(url);
 
 app.set('json spaces', 4);
 app.use('/api', loadAPI());
-app.listen(2739, err=>!!err?log(err): log(`Đã Mở Máy Chủ.`)); 
+app.listen(8080, err=>!!err?log(err): log(`Đã Mở Máy Chủ.`)); 
 
 
 function loadAPI(router = pkg.express.Router()) {
